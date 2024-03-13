@@ -1,0 +1,55 @@
+@import "../../../assets/scss/keyframes";
+
+.form {
+    position: relative;
+}
+
+.searchInput {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #666;
+    padding: 1rem 1rem 1rem 2rem;
+    border-radius: 100px;
+    width: 20rem;
+    border: #dddddd80;
+    box-shadow: 0 0 1rem rgba(#cccccc, .25);
+    --width-expand: 20rem;
+    animation: expandWidth ease-in-out .5s;
+    background-color: rgba(255, 255, 255, .2);
+
+    &::placeholder {
+        color: #666;
+        animation: appear ease 1s;
+    }
+
+    &:focus {
+        outline: unset;
+    }
+}
+
+.searchExpanded {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: var(--primary-color) !important;
+    border-radius: 100px !important;
+    transition: all ease 1s;
+    animation: appear .2s ease-in-out;
+
+    path {
+        stroke: #fff
+    }
+
+    // background-color: #000 !important;
+}
+
+.searchNoExpanded {
+    border-radius: 100px !important;
+
+    &:hover {
+        border: #dddddd80;
+        box-shadow: 0 0 1rem rgba(#cccccc, .25);
+        background-color: rgba(255, 255, 255, .2) !important;
+    }
+}

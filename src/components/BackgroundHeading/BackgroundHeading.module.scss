@@ -1,0 +1,15 @@
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12rem 0 10rem 0;
+    width: 100%;
+    background: url("../../assets/images/product-breadcrumb.png") no-repeat center /cover;
+    // background-color: #333;
+
+    h1 {
+        font-size: 4.8rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,91 @@
+.cartItemWrapper {
+    --gap-value: 3rem;
+    align-items: center;
+
+    .image {
+        $imageSize: 10.5rem;
+        width: $imageSize;
+        height: $imageSize;
+        border-radius: 1rem;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+
+    .content {
+        flex: 1;
+        max-width: calc(100% - (20px + 105px + 60px));
+        --gap-value: 1.5rem;
+
+        h3 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin-bottom: 1.2rem;
+        }
+
+        .contentX {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        .contentQuantity {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+            // max-width: 100%;
+            font-size: 1.6rem;
+            font-weight: 300;
+            min-width: 1rem;
+        }
+
+        .contentPrice {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+            font-size: 1.2rem;
+            font-weight: 500;
+            // max-width: 100%;
+            text-transform: uppercase;
+            color: var(--primary-color);
+
+            &::before {
+                content: "USD";
+                margin-right: .3rem;
+            }
+        }
+
+        .contentSalePrice {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-transform: capitalize;
+            font-size: 1rem;
+            font-weight: 500;
+            // max-width: 100%;
+            text-transform: uppercase;
+            color: #999;
+
+            &::before {
+                content: "USD";
+            }
+        }
+    }
+
+    .delete {
+        padding: .5rem;
+        background-color: unset;
+        border: unset;
+        cursor: pointer;
+
+        &:hover {
+            path {
+                fill: var(--primary-color);
+            }
+        }
+    }
+}

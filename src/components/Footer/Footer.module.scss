@@ -1,0 +1,87 @@
+.footerWrapper {
+    margin-top: 5rem;
+    padding: 10rem 0;
+    border-top: .1rem solid rgba(0, 0, 0, .17);
+}
+
+.overlayContent {
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    // margin-top: calc(10rem + 6.7rem);
+    display: flex;
+    gap: 3rem;
+    animation: appear .3s ease;
+
+    .contentHeading {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 6rem;
+        display: block;
+        text-transform: uppercase;
+        color: #666;
+    }
+
+    & * {
+        color: #999;
+        font-family: Roboto Condensed;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        li a {
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-decoration: none;
+        }
+    }
+}
+
+.subscribeForm {
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: start;
+
+        input {
+            width: 100%;
+            padding: .5rem 0;
+            border: unset;
+            border-bottom: .1rem solid #999;
+            font-weight: 400;
+            font-size: 1.6rem;
+            color: #999;
+            background-color: unset;
+            outline: unset;
+
+            &::placeholder {
+                color: #999;
+            }
+        }
+
+        button {
+            padding: 1rem 2rem;
+            text-transform: uppercase;
+            background-color: #fff;
+            border-radius: .4rem;
+            border: .1rem solid var(--primary-color);
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all .2s ease;
+            font-size: 1.4rem;
+            font-weight: 500;
+
+            &:hover {
+                border-color: unset;
+                color: var(--white-color);
+                background-color: var(--primary-color);
+
+            }
+        }
+    }
+}

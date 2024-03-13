@@ -1,0 +1,11 @@
+.breadcrumb {
+    display: flex;
+    --gap-value: 1.2rem;
+    align-items: center;
+
+    &Link {
+        font-size: 1.6rem;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}

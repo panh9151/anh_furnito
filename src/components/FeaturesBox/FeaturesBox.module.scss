@@ -1,0 +1,41 @@
+.containerWrapper {
+    background-color: #FAF3EA;
+
+    &__marginDown {
+        margin-bottom: -5rem;
+    }
+}
+
+.featuresWrapper {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF3EA;
+    height: 13rem;
+    margin-top: var(--margin-top-value);
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        // width: flex1;
+        flex: 1;
+        justify-content: center;
+
+        .featuresContent {
+            h3 {
+                font-weight: 600;
+                font-size: 2rem;
+                color: #333;
+                margin-bottom: .2rem;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 1.6rem;
+                color: #999;
+            }
+        }
+    }
+}

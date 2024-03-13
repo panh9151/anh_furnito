@@ -1,0 +1,23 @@
+.categoryList {
+    gap: 2rem;
+    padding: 0 3rem;
+
+    .image {
+        width: 100%;
+        // padding-top: 100%;
+        padding-top: calc(100% + 10rem);
+        background-color: #ccc;
+        border-radius: 1rem;
+        background: no-repeat center / cover;
+        background-image: var(--url-image)
+    }
+
+    .name {
+        font-size: 2.4rem;
+        font-weight: 600;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
+    >div {}
+}
